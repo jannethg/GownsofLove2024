@@ -9,7 +9,12 @@ export const selectAllCampsites = () => {
 };
 
 
-//retrieve a random campsite object from campsite array. 
-export const selectRandomCampsite = () => {  
-    return CAMPSITES[Math.floor(CAMPSITES.length * Math.random())];
-}
+//retrieve a random campsite object from campsite array.
+
+// export const selectRandomCampsite = () => {  
+//     return CAMPSITES[Math.floor(CAMPSITES.length * Math.random())];
+// }
+
+export const selectCampsiteById = (id) => {
+    return CAMPSITES.find(((campsite) => campsite.id === id));
+};
