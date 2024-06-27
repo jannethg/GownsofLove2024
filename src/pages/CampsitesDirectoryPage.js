@@ -6,11 +6,8 @@ import { selectCampsiteById } from "../features/campsites/campsitesSlice";
 
 const CampsiteDirectoryPage = () => {
   
-//we're changing the local state variable [campsiteId] to store an id number of the campsite's object
-//instead of the entire object
-//and we're changing the function name [setCampsiteId] to match
- //the <CampsiteDetail> is expecting us to pass the entire object
- 
+
+
   const [campsiteId, setCampsiteId] = useState(0); 
   const selectedCampsite = selectCampsiteById(campsiteId);
 

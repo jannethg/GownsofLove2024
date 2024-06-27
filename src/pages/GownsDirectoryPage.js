@@ -1,24 +1,19 @@
-import { Container, Row, Col, Button } from "reactstrap";
+import { useState } from "react";
+import { Container, Row, Col } from "reactstrap";
 import GownDetail from "../features/gowns/GownDetail";
 import GownsList from "../features/gowns/GownsList";
-import { selectRandomGown } from "../features/gowns/gownsSlice";
+import { selectGownById } from "../features/gowns/gownsSlice";
 
 const GownDirectoryPage = () => {
-  let selectedGown = selectRandomGown();
+  
+  const [gownId, setGownId] = useState(0); 
+  const selectedGown = selectGownById(gownId);
 
-  const toggleGown = () => {
-    selectedGown = selectRandomGown();
-    console.log(selectedGown);
-};
   return (
-    <Container>
-      <Button onClick={() => toggleGown()}>
-            Select Random Campsite 
-        </Button>
-     
+    <Container>     
       <Row>
         <Col sm="5" md="7">
-          <GownsList />
+          <GownsList setGownId={setGownId}/>
         </Col>
         <Col sm="7" md="5">
           <GownDetail gown={selectedGown} />

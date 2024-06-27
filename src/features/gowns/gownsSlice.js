@@ -10,6 +10,10 @@ export const selectAllGowns = () => {
 
 
 //retrieve a random campsite object from campsite array. 
-export const selectRandomGown = () => {  
-    return GOWNS[Math.floor(GOWNS.length * Math.random())];
-}
+// export const selectRandomGown = () => {  
+//     return GOWNS[Math.floor(GOWNS.length * Math.random())];
+// }
+
+export const selectGownById = (id) => {
+    return GOWNS.find(((gown) => gown.id === id));
+};
