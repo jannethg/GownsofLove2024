@@ -7,7 +7,7 @@ const GownsList = () => {
     <Row className="ms-auto">
       {GOWNS.map((gown) => {
         return (
-          <Col md="3" className="m-4" key={gown.id}>
+          <Col md="5" className="m-4" key={gown.id}>
             <GownCard gown={gown} />
           </Col>
         );
