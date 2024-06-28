@@ -75,10 +75,9 @@
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
 
+  --bs-primary-light: #d1c6c6;
   --gol-primary-vibes: "Great Vibes", cursive;
   --gol-primary-la: "Sacramento", cursive;
-
-  
 }
 
 body {
@@ -90,6 +89,7 @@ h2,
 h3,
 .card-body > .card-title {
   font-family: "Lobster", cursive;
+  color: white;
 }
 
 .card-title {
@@ -110,6 +110,15 @@ h2 {
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 200px;
+}
+
+/*header */
+#maiNav {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  background-color: #d1c6c680;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
 }
 
 .site-footer {
@@ -135,6 +144,17 @@ h2 {
   background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a);
   margin-bottom: 2rem;
   min-height: 8rem;
+}
+
+.nav-item, .navbar {
+  color: white;
+}
+
+.nav-link,
+.nav-link:focus,
+.nav-link:hover, 
+.nav-link:active {
+  color: white;
 }
 
 .page-enter {
