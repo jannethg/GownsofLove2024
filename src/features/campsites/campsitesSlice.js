@@ -18,6 +18,13 @@ export const selectAllCampsites = () => {
 //Function by passing a specific id
 //return by campsites.find() array.
 //parameter of campsite to find by campsite.id
+
+// export const selectCampsiteById = (id) => {
+//     return CAMPSITES.find(((campsite) => campsite.id === id));
+// };
+
+
+//parseInt to convert the string value to an integer
 export const selectCampsiteById = (id) => {
-    return CAMPSITES.find(((campsite) => campsite.id === id));
+    return CAMPSITES.find((campsite) => campsite.id === parseInt(id));
 };

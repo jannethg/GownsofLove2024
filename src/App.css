@@ -28,7 +28,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #fe4042;
   --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
+  --bs-light: #d1c6c6;
   --bs-dark: #212529;
   --bs-primary-rgb: 254, 64, 66;
   --bs-secondary-rgb: 108, 117, 125;
@@ -146,13 +146,14 @@ h2 {
   min-height: 8rem;
 }
 
-.nav-item, .navbar {
+.nav-item,
+.navbar {
   color: white;
 }
 
 .nav-link,
 .nav-link:focus,
-.nav-link:hover, 
+.nav-link:hover,
 .nav-link:active {
   color: white;
 }
