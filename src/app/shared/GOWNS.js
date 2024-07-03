@@ -38,7 +38,7 @@ export const GOWNS = [
     name: "Timeless Gown",
     image: timelessDressImg,
     elevation: 42,
-    featured: true,
+    featured: false,
     description:
       "You'll never want to leave this hidden gem, deep within the lush Redux Woods.",
   },
@@ -56,7 +56,7 @@ export const GOWNS = [
     name: "Accessories",
     image: accessoriesImg,
     elevation: 42,
-    featured: true,
+    featured: false,
     description:
       "You'll never want to leave this hidden gem, deep within the lush Redux Woods.",
   },

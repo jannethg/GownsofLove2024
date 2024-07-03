@@ -3,11 +3,18 @@ import chromeRiverImg from '../assets/img/chrome-river.jpg';
 import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
 import reduxWoodsImg from '../assets/img/redux-woods.jpg';
 
+import whiteDressImg from "../assets/gowns/1.jpg";
+import greenDressImg from "../assets/gowns/2.jpg";
+import eveningDressImg from "../assets/gowns/3.jpg";
+import timelessDressImg from "../assets/gowns/4.jpg";
+import semiFormalImg from "../assets/gowns/5.jpg";
+import accessoriesImg from "../assets/gowns/6.jpg";
+
 export const CAMPSITES = [
     {
         id: 0,
-        name: 'React Lake Campground',
-        image: reactLakeImg,
+        name: 'Wedding Gown',
+        image: whiteDressImg,
         elevation: 1233,
         featured: false,
         description:
@@ -15,8 +22,8 @@ export const CAMPSITES = [
     },
     {
         id: 1,
-        name: 'Chrome River Campground ',
-        image: chromeRiverImg,
+        name: 'Ball Gown',
+        image: greenDressImg,
         elevation: 877,
         featured: false,
         description:
@@ -24,8 +31,8 @@ export const CAMPSITES = [
     },
     {
         id: 2,
-        name: 'Breadcrumb Trail Campground',
-        image: breadCrumbImg,
+        name: 'Evening Gown',
+        image: eveningDressImg,
         elevation: 2901,
         featured: false,
         description:
@@ -33,9 +40,27 @@ export const CAMPSITES = [
     },
     {
         id: 3,
-        name: 'Redux Woods Campground',
-        image: reduxWoodsImg,
+        name: 'Timeless Gown',
+        image: timelessDressImg,
         elevation: 42,
+        featured: true,
+        description:
+            "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+    },
+    {
+        id: 4,
+        name: 'Semi-Formal Gown',
+        image: semiFormalImg,
+        elevation: 43,
+        featured: false,
+        description:
+            "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+    },
+    {
+        id: 5,
+        name: 'Accessories',
+        image: accessoriesImg,
+        elevation: 44,
         featured: true,
         description:
             "You'll never want to leave this hidden gem, deep within the lush Redux Woods."

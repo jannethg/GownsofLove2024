@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="site-footer">
+    <footer className="site-footer mt-5">
       <Container>
         <Row>
-          <Col xs={{ size: 4, offset: 1 }} sm="2">
-            <h5>Links</h5>
+          <Col xs={{ size: 4, offset: 1 }} sm="2" className="mt-5">
+            <h4>Links</h4>
             <ul className="list-unstyled">
               <li>
                 <Link to="/">Home</Link>
@@ -23,8 +23,8 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col xs="6" sm="3" className="text-center">
-            <h5>Social</h5>
+          <Col xs="6" sm="3" className="text-center mt-5">
+            <h4>Social</h4>
             <a
               className="btn btn-social-icon btn-instagram"
               href="http://instagram.com/"
@@ -50,7 +50,8 @@ const Footer = () => {
               <i className="fa fa-linkedin" />
             </a>
           </Col>
-          <Col sm="4" className="text-center">
+          <Col sm="4" className="text-center mt-5">
+            <h4>Contact</h4>
             <a role="button" className="btn btn-link" href="tel:(410)-652-1795">
               <i className="fa fa-phone" /> 1-206-555-1234
             </a>

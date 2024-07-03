@@ -5,12 +5,13 @@ import weedsImg from '../assets/img/weeds.jpg';
 import bootsImg from '../assets/img/boots.jpg';
 // Photo by Jonathan Gallegos on Unsplash
 import asyncImg from '../assets/img/mount-promise.jpg';
+import greenDressImg from '../assets/gowns/2.jpg';
 
 export const PROMOTIONS = [
     {
         id: 0,
-        name: 'Mountain Adventure',
-        image: breadCrumbImg,
+        name: 'Ball Gowns',
+        image: greenDressImg,
         featured: true,
         description:
             'Book a 5-day mountain trek with a seasoned outdoor guide! Fly fishing equipment and lessons provided.'

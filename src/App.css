@@ -59,6 +59,9 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+  --bs-font-heading: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
@@ -129,35 +132,51 @@ hr {
 h6,
 .h6,
 h5,
-.h5,
+.h5 {
+  font-family: var(--gol-primary-la);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gol-primary);
+  letter-spacing: 0.0625em;
+}
+
 h4,
 .h4,
 h3,
 .h3,
 h2,
-.h2
-{
+.h2 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: var(--gol-primary-la);
-  font-weight: 700;  
+  font-family: var(--gol-primary-vibes);
+  font-weight: 700;
   letter-spacing: 5px;
   text-transform: none;
-  font-size: 4.0rem; 
+  font-size: 4.5rem;
 }
 
 h1 {
   font-family: var(--gol-primary-la);
   letter-spacing: 5px;
   text-transform: none;
-  font-size: 3.0rem; 
-  font-weight:700;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 h2,
 .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
+
+h2.section-heading {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 5px;
+  font-family: var(--gol-primary-vibes);
+  color: #352527;
+}
+
 @media (min-width: 1200px) {
   h2,
   .h2 {
@@ -2918,11 +2937,19 @@ textarea.form-control.is-invalid {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.btn-gol {
+  background-color: var(--gol-primary);
+  padding: 10px;
+  color: white;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
   }
 }
+
 .btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
@@ -3868,6 +3895,15 @@ fieldset:disabled .btn {
   display: block;
 }
 
+.card .bar-primary {
+  background-color: var(--gol-primary);
+  color: white;
+}
+
+.bar-primary {
+  background-color: var(--gol-primary);
+  color: white;
+}
 
 .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
@@ -3916,8 +3952,6 @@ fieldset:disabled .btn {
 .navbar-text a:focus {
   color: var(--bs-navbar-active-color);
 }
-
-
 
 .nav-brand {
   font-family: var(--gol-primary-la);
@@ -4319,6 +4353,7 @@ fieldset:disabled .btn {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
+  background-color: rgba(209, 198, 198, 0.5);
 }
 
 .card-title {
@@ -8332,11 +8367,15 @@ fieldset:disabled .btn {
   word-wrap: break-word !important;
   word-break: break-word !important;
 }
+.text-circle {
+  --bs-text-opacity: 1;
+  color: var(--gol-primary) !important;
+}
 
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--gol-primary), var(--bs-text-opacity) !important;
 }
 
 .text-secondary {
@@ -11202,7 +11241,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(209, 198, 198, .5);
+  background-color: rgba(209, 198, 198, 0.5);
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11245,7 +11284,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: rgba(209, 198, 198, .5);
+    background-color: rgba(209, 198, 198, 0.5);
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11689,4 +11728,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--gol-primary);
+}
+
+.site-footer {
+  background-color: rgba(209, 198, 198, 0.5);
+}
+
+h4.site-footer {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--gol-primary);
+  letter-spacing: 0.0625em;
 }

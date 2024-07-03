@@ -4,10 +4,12 @@ import AnimatedDisplayCard from './AnimatedDisplateCard';
 import { selectFeaturedCampsite } from '../campsites/campsitesSlice';
 import { selectFeaturedPromotion } from '../promotions/promotionsSlice';
 import { selectFeaturedPartner } from '../partners/partnersSlice';
+import { selectFeaturedGown } from '../gowns/gownsSlice';
+
 
 
 const DisplayList = () => {
-    const items = [selectFeaturedCampsite(), selectFeaturedPromotion(), selectFeaturedPartner()];
+    const items = [selectFeaturedCampsite(), selectFeaturedPromotion(), selectFeaturedGown()];
 
     return (
         <Row>
