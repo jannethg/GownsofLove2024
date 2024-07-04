@@ -7,13 +7,13 @@ const ContactPage = () => {
     return (
         <Container>
             <SubHeader current='Contact Us'>
-
             </SubHeader>
             <Row className='row-content align-items-center'>
+                <Col sm='2'></Col>
                 <Col sm='4'>
-                    <h5>Our Address</h5>
+                    <h3>Our Address</h3>
                     <address>
-                        3900 Pleasantburg Dr.
+                        9999 Example Dr.
                         <br />
                         Fayetteville, NC 28312
                         <br />
@@ -39,7 +39,7 @@ const ContactPage = () => {
             </Row>
             <Row className='row-content mt-5'>
                 <Col xs='12'>
-                    <h3>Send Us Your Feedback</h3>
+                    <h3 className="my-3">Send Us Your Feedback</h3>
                     <hr/>
                 </Col>
                 <Col md='10'>

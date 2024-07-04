@@ -7,7 +7,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col xs={{ size: 4, offset: 1 }} sm="2" className="mt-5">
-            <h4>Links</h4>
+            <h4 className="name-footer">Links</h4>
             <ul className="list-unstyled">
               <li>
                 <Link to="/">Home</Link>
@@ -24,7 +24,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs="6" sm="3" className="text-center mt-5">
-            <h4>Social</h4>
+            <h4 className="name-footer">Social</h4>
             <a
               className="btn btn-social-icon btn-instagram"
               href="http://instagram.com/"
@@ -51,9 +51,9 @@ const Footer = () => {
             </a>
           </Col>
           <Col sm="4" className="text-center mt-5">
-            <h4>Contact</h4>
+            <h4 className="name-footer">Contact</h4>
             <a role="button" className="btn btn-link" href="tel:(410)-652-1795">
-              <i className="fa fa-phone" /> 1-206-555-1234
+              <i className="fa fa-phone" /> 1-555-555-5555
             </a>
             <br />
             <a
@@ -61,7 +61,7 @@ const Footer = () => {
               className="btn btn-link"
               href="mailto:jgutier1@gmail.com"
             >
-              <i className="fa fa-envelope-o" /> campsites@nucamp.co
+              <i className="fa fa-envelope-o" /> jgutier1@gmail.com
             </a>
           </Col>
         </Row>

@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -177,6 +167,17 @@ h2.section-heading {
   color: #352527;
 }
 
+h3.my-3 {
+  font-weight: 600;
+}
+
+h4.my-3 {
+  font-weight: 600;
+}
+h5.my-3 {
+  font-weight: 600;
+}
+
 @media (min-width: 1200px) {
   h2,
   .h2 {
@@ -187,6 +188,7 @@ h2.section-heading {
 h3,
 .h3 {
   font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
 }
 @media (min-width: 1200px) {
   h3,
@@ -2940,8 +2942,14 @@ textarea.form-control.is-invalid {
 
 .btn-gol {
   background-color: var(--gol-primary);
-  padding: 10px;
+  padding: 10px 15px 10px 15px;
   color: white;
+  border-radius: 10px;
+  border-color: "#99999";
+}
+
+.btn-gol:hover {
+  background-color: #000000;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4358,6 +4366,15 @@ fieldset:disabled .btn {
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
+}
+
+.card-title.list-title {
+  background: rgba(36, 9, 28, 0.78);
+  width: 50%;
+  text-decoration: underline;
+  color: #fe4042;
+  padding: 5px;
+  font-size: 1.2rem;
 }
 
 .card-subtitle {
@@ -11205,13 +11222,14 @@ p {
 }
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 768px) {
@@ -11344,13 +11362,23 @@ header.masthead .masthead-heading {
   font-family: var(--gol-primary-vibes);
 }
 
+@media (max-width: 767px) {
+  header.masthead .masthead-subheading {
+    font-size: 1.65rem;
+    line-height: 2.5rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 3rem;
+  }
+}
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 20rem;
     padding-bottom: 25rem;
   }
   header.masthead .masthead-subheading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
@@ -11735,12 +11763,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: rgba(209, 198, 198, 0.5);
 }
 
-h4.site-footer {
+h4.name-footer {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 6rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: var(--gol-primary);
   letter-spacing: 0.0625em;
 }

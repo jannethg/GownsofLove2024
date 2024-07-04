@@ -10,11 +10,11 @@ import greenDressImg from '../assets/gowns/2.jpg';
 export const PROMOTIONS = [
     {
         id: 0,
-        name: 'Ball Gowns',
+        name: 'Ball Gown',
         image: greenDressImg,
         featured: true,
         description:
-            'Book a 5-day mountain trek with a seasoned outdoor guide! Fly fishing equipment and lessons provided.'
+            'Undeniably breathtaking, defined by its fitted bodice and voluminous skirt, this princess-inspired silhouette is ideal for the bride seeking an elegant gowns.'
     },
     {
         id: 1,

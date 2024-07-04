@@ -6,11 +6,11 @@ const Partner = ({ partner }) => {
             <>
                 <img 
                 src={image} 
-                alt={name} 
+                alt="" 
                 style={{ width: '150px' }}   
                 />
                 <div className='m-4'>
-                    <h5 className='fw-bold'>{name}</h5>
+                    <h3>{name}</h3>
                     {description}
                 </div>
             </>

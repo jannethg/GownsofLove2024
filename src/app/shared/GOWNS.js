@@ -13,7 +13,7 @@ export const GOWNS = [
     elevation: 1233,
     featured: false,
     description:
-      "Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.",
+      "From sleek minimalism to show-stopping texture and vibrant hues, the bridal industry’s latest runway looks have proven to be nothing short of memorable.",
   },
   {
     id: 1,
@@ -35,19 +35,19 @@ export const GOWNS = [
   },
   {
     id: 3,
-    name: "Timeless Gown",
+    name: "Exclusive Gown",
     image: timelessDressImg,
     elevation: 42,
-    featured: false,
+    featured: true,
     description:
-      "You'll never want to leave this hidden gem, deep within the lush Redux Woods.",
+      "From sleek minimalism to show-stopping texture and vibrant hues, the bridal industry’s latest runway looks have proven to be nothing short of memorable. ",
   },
   {
     id: 4,
     name: "Semi-Formal",
     image: semiFormalImg,
     elevation: 42,
-    featured: true,
+    featured: false,
     description:
       "You'll never want to leave this hidden gem, deep within the lush Redux Woods.",
   },

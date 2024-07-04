@@ -34,7 +34,7 @@ const AboutPage = () => {
       </Row>
       <Row className="row-content m-5">
         <Col sm="6">
-          <h3>Our Mission</h3>
+          <h3 className='fw-bold text-muted'>Our Mission</h3>
           <p>
             But our mission extends beyond the purchase of gown donations. We
             are devoted to making dreams come true for every bride, regardless
@@ -102,7 +102,7 @@ const AboutPage = () => {
       </Row>
       <Row className="row-content mt-5">
         <Col xs="12">
-          <h2>Community Partners</h2>
+          <h2 className='fw-bold text-muted'>Community Partners</h2>
         </Col>
         <PartnersList />
       </Row>

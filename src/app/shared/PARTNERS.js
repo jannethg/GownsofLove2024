@@ -1,39 +1,41 @@
-import bootStrapLogo from '../assets/img/bootstrap-logo.png';
-import gitLogo from '../assets/img/git-logo.png';
-import mongoLogo from '../assets/img/mongo-logo.png';
-import nodeLogo from '../assets/img/node-logo.png';
+
+import heartImg from '../assets/teams/heart.jpg';
+import volunteersImg from '../assets/teams/volunteers.jpg';
+import giftImg from '../assets/teams/gift.jpg';
+import familyImg from '../assets/teams/family.jpg';
+
 
 export const PARTNERS = [
     {
         id: 0,
-        name: 'Bootstrap Outfitters',
-        image: bootStrapLogo,
+        name: 'Partner with Us',
+        image: heartImg,
         featured: false,
         description:
-            "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat."
+            "Learn the ways in which you can partner with us to make sure everyone has an opportunity to thrive."
     },
     {
         id: 1,
-        name: 'Git Out Expeditions',
-        image: gitLogo,
+        name: 'Advocate',
+        image: giftImg,
         featured: false,
         description:
-            'Join Git Out Expeditions to explore new horizons with a group of other adventurers!'
+            'With your help, we advocate for public policies that support skills training, equitable employment and community-based services for people who want to work and advance careers.'
     },
     {
         id: 2,
-        name: 'Mongo Fly Shop',
-        image: mongoLogo,
+        name: 'Become a Sponsor',
+        image: familyImg,
         featured: false,
         description:
-            'Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.'
+            'When you sponsor, you can grow your business while investing in our life-changing and planet-sustaining mission.'
     },
     {
         id: 3,
-        name: 'Node Outdoor Apparel',
-        image: nodeLogo,
+        name: 'Become a Volunteer',
+        image: volunteersImg,
         featured: true,
         description:
-            'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.'
+            'Volunteers help people build skills, earn jobs, and strengthen their finances.'
     }
 ];
