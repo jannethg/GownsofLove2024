@@ -4368,14 +4368,22 @@ fieldset:disabled .btn {
   margin-bottom: var(--bs-card-title-spacer-y);
 }
 
-.card-title.list-title {
-  background: rgba(36, 9, 28, 0.78);
-  width: 50%;
-  text-decoration: underline;
-  color: #fe4042;
-  padding: 5px;
-  font-size: 1.2rem;
+
+.card-title.list-title {    
+    width: 50%;
+    text-decoration: underline;
+    color: #fe4042;   
+    font-size: 1.2rem;   
+    padding: 5px 5px 0px 15px;
+    font-weight: 600;
 }
+
+.card.list-title  {  
+  border-radius: 10px;
+  background: #e6e3e2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 
 .card-subtitle {
   margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));

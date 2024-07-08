@@ -30,8 +30,8 @@ const Header = () => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/directory">
-                <i className="fa fa-list fa-lg" /> Directory
+              <NavLink className="nav-link" to="/give-love">
+                <i className="fa fa-heart fa-lg" /> Give Love
               </NavLink>
             </NavItem>
             <NavItem>
@@ -39,6 +39,11 @@ const Header = () => {
                 <i className="fa fa-info fa-lg" /> About
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to="/directory">
+                <i className="fa fa-list fa-lg" /> Directory
+              </NavLink>
+            </NavItem> 
             <NavItem>
               <NavLink className="nav-link" to="/contact">
                 <i className="fa fa-address-card fa-lg" /> Contact

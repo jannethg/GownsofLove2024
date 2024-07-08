@@ -9,10 +9,11 @@ const CampsiteCard = ({ campsite }) => {
     //this will trigger a route component that we added in the App.js to the campsiteDetailpage for
     //whatever id was passed in here....
     <Link to={`${id}`}>
-      <Card>
+      <Card  className="list-title">
+      <CardTitle className="list-title">{name}</CardTitle>
         <CardImg width="100%" src={image} alt={name} />
         <CardImgOverlay>
-          <CardTitle className="list-title">{name}</CardTitle>
+         
         </CardImgOverlay>
       </Card>
     </Link>
