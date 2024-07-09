@@ -3,9 +3,7 @@ import CampsitesList from "../features/campsites/CampsitesList";
 import SubHeader from "../components/SubHeader";
 import { Link } from "react-router-dom";
 
-import giftImg from "../app/assets/teams/gift.jpg";
-import heartImg from "../app/assets/teams/heart.jpg";
-import volunteersImg from "../app/assets/teams/volunteers.jpg";
+
 
 //here you should see the Campsite list component, not any details.
 const CampsitesDirectoryPage = () => {
