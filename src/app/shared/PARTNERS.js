@@ -1,6 +1,5 @@
 
 import heartImg from '../assets/teams/heart.jpg';
-import volunteersImg from '../assets/teams/volunteers.jpg';
 import giftImg from '../assets/teams/gift.jpg';
 import familyImg from '../assets/teams/family.jpg';
 import timelessDressImg from "../assets/gowns/4.jpg";
