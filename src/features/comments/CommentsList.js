@@ -1,10 +1,14 @@
+import { useSelector } from 'react-redux';
 import { Col } from 'reactstrap';
 import Comment from './Comment';
 import { selectCommentsByCampsiteId } from './commentsSlice';
 import CommentForm from './CommentForm';
 
+//we'll pass the useSelector hook as a callback
+//we'll invoke the function in the argument list. 
+//this function will have access to both campsiteID and application state from the redux store. 
 const CommentsList = ({ campsiteId }) => {
-    const comments = selectCommentsByCampsiteId(campsiteId);
+    const comments = useSelector(selectCommentsByCampsiteId(campsiteId));
     
     if(comments && comments.length > 0) {
         return (
