@@ -8,6 +8,8 @@ import {
   NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import UserLoginForm from "../features/user/UserLoginForm";
+
 
 const Header = () => {
   
@@ -50,6 +52,7 @@ const Header = () => {
               </NavLink>
             </NavItem>
           </Nav>
+          <UserLoginForm />
       </Collapse>
     </Navbar>
   );
