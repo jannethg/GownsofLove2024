@@ -3,6 +3,7 @@ import heartImg from '../assets/teams/heart.jpg';
 import volunteersImg from '../assets/teams/volunteers.jpg';
 import giftImg from '../assets/teams/gift.jpg';
 import familyImg from '../assets/teams/family.jpg';
+import timelessDressImg from "../assets/gowns/4.jpg";
 
 
 export const PARTNERS = [
@@ -32,10 +33,10 @@ export const PARTNERS = [
     },
     {
         id: 3,
-        name: 'Become a Volunteer',
-        image: volunteersImg,
+        name: 'Exclusive Gown',
+        image: timelessDressImg,
         featured: true,
         description:
-            'Volunteers help people build skills, earn jobs, and strengthen their finances.'
+            'From sleek minimalism to show-stopping texture and vibrant hues, the bridal industry’s latest runway looks have proven to be nothing short of memorable.'
     }
 ];
