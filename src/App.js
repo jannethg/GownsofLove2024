@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
@@ -10,8 +12,16 @@ import GownDirectoryPage from "./pages/GownsDirectoryPage";
 import CampsiteDetailPage from "./pages/CampsiteDetailPage";
 import GiveLove from "./pages/GiveLove";
 import PopGownDirectoryPage from "./pages/PopGownsDirectoryPage";
+import { fetchCampsites } from "./features/campsites/campsitesSlice";
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCampsites());
+}, [dispatch]);
+
   return (
     <div className="App">
       <Header />
